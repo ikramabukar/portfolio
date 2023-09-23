@@ -10,7 +10,7 @@ import About from "./components/About.js";
 import Projects from "./components/Projects.js";
 import Contact from "./components/Contact.js";
 import NavBar from "./components/NavBar.js";
-
+import Footer from "./components/Footer.js";
 // app component
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="Projects" element={<Projects />}></Route>
           <Route path="Contact" element={<Contact />}></Route>
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
