@@ -15,18 +15,20 @@ import Footer from "./components/Footer.js";
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="About" element={<About />}></Route>
-          <Route path="Projects" element={<Projects />}></Route>
-          <Route path="Contact" element={<Contact />}></Route>
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <Router>
+        <div className="app">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="About" element={<About />}></Route>
+            <Route path="Projects" element={<Projects />}></Route>
+            <Route path="Contact" element={<Contact />}></Route>
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }
 

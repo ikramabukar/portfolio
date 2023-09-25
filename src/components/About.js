@@ -1,4 +1,4 @@
 function About() {
-  return <div></div>;
+  return <div className="About" id="about"></div>;
 }
 export default About;

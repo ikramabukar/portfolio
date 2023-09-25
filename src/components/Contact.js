@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h1 className="contact text-center mt-5">How Can I Help?</h1>
       <p className="lead text-center">Get in touch with me</p>
       <Form className="border border-dark rounded">

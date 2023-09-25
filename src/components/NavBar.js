@@ -8,21 +8,83 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <Navbar expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">Ikram Abukar</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">
+      <Container fluid>
+        <Navbar.Brand
+          href="/"
+          style={{
+            fontSize: "23px",
+            fontFamily: "Inclusive Sans",
+            marginLeft: "25px",
+            fontWeight: "700",
+            letterSpacing: "3px",
+          }}
+        >
+          Ikram Abukar
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="ms-auto"
+            style={{
+              maxHeight: "100px",
+              fontFamily: "Inclusive Sans",
+              fontSize: "18px",
+              padding: "0, 25px",
+              letterSpacing: "3px",
+            }}
+            navbarScroll={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              maxHeight: "150px",
+            }}
+          >
+            <Nav.Link
+              style={{
+                display: "block",
+                textAlign: "center",
+                fontSize: "18px",
+                fontWeight: "700",
+              }}
+              as={Link}
+              to="/"
+            >
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="About">
+            <Nav.Link
+              style={{
+                display: "block",
+                textAlign: "center",
+                fontSize: "18px",
+                fontWeight: "700",
+              }}
+              as={Link}
+              to="About"
+            >
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="Projects">
+            <Nav.Link
+              style={{
+                display: "block",
+                textAlign: "center",
+                fontSize: "18px",
+                fontWeight: "700",
+              }}
+              as={Link}
+              to="Projects"
+            >
               Projects
             </Nav.Link>
-            <Nav.Link as={Link} to="Contact">
+            <Nav.Link
+              style={{
+                display: "block",
+                textAlign: "center",
+                fontSize: "18px",
+                fontWeight: "700",
+              }}
+              as={Link}
+              to="Contact"
+            >
               Contact
             </Nav.Link>
           </Nav>

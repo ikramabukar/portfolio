@@ -3,7 +3,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1 className="text-center mt-5">Projects</h1>
       <p className=" lead text-center">Check out my projects</p>
       <CardGroup>
